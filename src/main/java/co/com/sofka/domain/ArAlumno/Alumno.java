@@ -38,5 +38,11 @@ public class Alumno extends AggregateEvent<AlumnoID> {
         return profesores;
     }
 
+    public ClaseVO clase() {
+        return clase;
+    }
 
+    public Orientacion orientacion() {
+        return orientacion;
+    }
 }

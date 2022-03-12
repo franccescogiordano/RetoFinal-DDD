@@ -8,7 +8,7 @@ public class Profesor extends AggregateEvent<ProfesorID> {
     protected Direccion direccion;
     protected Set<AlumnoID> alumnos;
     protected Set<Clase> clases;
-    protected Set<Examen> examen;
+    protected Set<Examen> examenes;
     protected Set<Orientacion> orientaciones;
 
 
