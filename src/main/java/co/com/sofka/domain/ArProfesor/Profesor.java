@@ -1,12 +1,12 @@
 package co.com.sofka.domain.ArProfesor;
 
-import co.com.sofka.domain.ArAlumno.Alumno;
+import co.com.sofka.domain.ArProfesor.event.ProfesorCreado;
 import co.com.sofka.domain.generic.*;
 import java.util.*;
-public class Profesor extends AggregateRoot<ProfesorID> {
+public class Profesor extends AggregateEvent<ProfesorID> {
     protected NombreCompleto nombreCompleto;
     protected Direccion direccion;
-    protected Set<Alumno> alumnos;
+    protected Set<AlumnoID> alumnos;
     protected Set<Clase> clases;
     protected Set<Examen> examen;
     protected Set<Orientacion> orientaciones;
@@ -14,19 +14,20 @@ public class Profesor extends AggregateRoot<ProfesorID> {
 
 
 
-    public Profesor(ProfesorID entityId) {
+    public Profesor(ProfesorID entityId,NombreCompleto nombreCompleto,Direccion direccion) {
         super(entityId);
+        appendChange(new ProfesorCreado(nombreCompleto,direccion)).apply();
         subscribe(new ProfesorEventChange(this));
     }
 
-    public static Profesor from(ProfesorID profesorId, List<DomainEvent> eventList){
-        Profesor profesor = new Profesor(profesorId);
+    public static Profesor from(ProfesorID profesorId,NombreCompleto nombreCompleto,Direccion direccion, List<DomainEvent> eventList){
+        Profesor profesor = new Profesor(profesorId,nombreCompleto,direccion);
         eventList.forEach(profesor::applyEvent);
 
-        return pedido;
+        return profesor;
     }
 
-    public Set<Alumno> alumnos() {
+    public Set<AlumnoID> alumnos() {
         return alumnos;
     }
 

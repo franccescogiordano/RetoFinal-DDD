@@ -1,20 +1,21 @@
 package co.com.sofka.domain.ArAlumno;
 
-import co.com.sofka.domain.generic.AggregateEvent;
-import co.com.sofka.domain.generic.AlumnoID;
-import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.domain.generic.NombreCompleto;
+import co.com.sofka.domain.ArAlumno.event.AlumnoCreado;
+import co.com.sofka.domain.generic.*;
 
 import java.util.*;
 public class Alumno extends AggregateEvent<AlumnoID> {
     protected NombreCompleto nombreCompleto;
-   
-    protected ClienteId clienteId;
+    protected Direccion direccion;
+    protected Set<ProfesorID> profesores;
+    protected ClaseVO clase;
+    protected  Orientacion orientacion;
 
-    public Alumno(AlumnoID alumnoId, ClienteId clienteId) {
+    public Alumno(AlumnoID alumnoId,NombreCompleto nombreCompleto,Direccion direccion) {
         super(alumnoId);
+        appendChange(new AlumnoCreado(nombreCompleto,direccion)).apply();
         subscribe(new AlumnoEventChange(this));
-        appendChange(new AlumnoCreado(clienteId)).apply();
+
     }
 
 
@@ -33,11 +34,9 @@ public class Alumno extends AggregateEvent<AlumnoID> {
 
 
 
-    public Set<ProductoAlumno> productoAlumnos() {
-        return productoAlumnos;
+    public Set<ProfesorID> profesores() {
+        return profesores;
     }
 
-    public Venta venta() {
-        return venta;
-    }
+
 }
