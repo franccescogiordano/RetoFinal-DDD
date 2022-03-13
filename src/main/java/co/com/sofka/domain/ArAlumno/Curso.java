@@ -2,7 +2,7 @@ package co.com.sofka.domain.ArAlumno;
 
 import co.com.sofka.domain.ArAlumno.values.*;
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.domain.generic.Orientacion;
+import co.com.sofka.domain.generics.Orientacion;
 
 public class Curso extends Entity<CursoID> {
     private final NombreCurso nombreCurso;

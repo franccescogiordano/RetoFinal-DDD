@@ -1,8 +1,8 @@
 package co.com.sofka.domain.ArAlumno.event;
 
 import co.com.sofka.domain.generic.*;
-
-import java.util.Set;
+import co.com.sofka.domain.generics.Direccion;
+import co.com.sofka.domain.generics.NombreCompleto;
 
 public class AlumnoCreado extends DomainEvent {
     private final NombreCompleto nombreCompleto;

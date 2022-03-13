@@ -3,6 +3,11 @@ import co.com.sofka.domain.ArAlumno.values.Tipo;
 import co.com.sofka.domain.ArMateria.events.MateriaCreada;
 import co.com.sofka.domain.ArMateria.values.NombreMateria;
 import co.com.sofka.domain.generic.*;
+import co.com.sofka.domain.generics.AlumnoID;
+import co.com.sofka.domain.generics.MateriaID;
+import co.com.sofka.domain.generics.Orientacion;
+import co.com.sofka.domain.generics.ProfesorID;
+
 import java.util.*;
 
 public class Materia extends AggregateEvent<MateriaID> {

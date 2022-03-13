@@ -1,5 +1,5 @@
 package co.com.sofka.domain.ArProfesor.event;
-import co.com.sofka.domain.generic.AlumnoID;
+import co.com.sofka.domain.generics.AlumnoID;
 import co.com.sofka.domain.generic.DomainEvent;
 import java.util.*;
 public class AlumnosCargados extends DomainEvent {

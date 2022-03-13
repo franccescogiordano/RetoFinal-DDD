@@ -1,15 +1,10 @@
 package co.com.sofka.domain.ArProfesor;
 
-import co.com.sofka.domain.ArAlumno.values.BecaId;
-import co.com.sofka.domain.ArAlumno.values.FechaCobro;
-import co.com.sofka.domain.ArAlumno.values.Monto;
-import co.com.sofka.domain.ArAlumno.values.TipoBeca;
 import co.com.sofka.domain.ArProfesor.values.ExamenID;
 import co.com.sofka.domain.ArProfesor.values.Preguntas;
 import co.com.sofka.domain.ArProfesor.values.Respuestas;
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.domain.generic.Nombre;
-import co.com.sofka.domain.generic.Orientacion;
+import co.com.sofka.domain.generics.Orientacion;
 
 public class Examen extends Entity<ExamenID> {
     private final Preguntas preguntas;

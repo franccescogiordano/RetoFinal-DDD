@@ -1,10 +1,8 @@
 package co.com.sofka.domain.ArProfesor.event;
 
-import co.com.sofka.domain.ArProfesor.Clase;
-import co.com.sofka.domain.ArProfesor.Examen;
 import co.com.sofka.domain.generic.*;
-
-import java.util.Set;
+import co.com.sofka.domain.generics.Direccion;
+import co.com.sofka.domain.generics.NombreCompleto;
 
 public class ProfesorCreado extends DomainEvent {
     private final NombreCompleto nombreCompleto;

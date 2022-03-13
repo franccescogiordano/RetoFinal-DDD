@@ -2,6 +2,8 @@ package co.com.sofka.domain.ArProfesor;
 
 import co.com.sofka.domain.ArProfesor.event.ProfesorCreado;
 import co.com.sofka.domain.generic.*;
+import co.com.sofka.domain.generics.*;
+
 import java.util.*;
 public class Profesor extends AggregateEvent<ProfesorID> {
     protected NombreCompleto nombreCompleto;

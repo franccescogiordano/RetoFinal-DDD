@@ -1,6 +1,7 @@
-package co.com.sofka.domain.generic;
+package co.com.sofka.domain.generics;
 
 import co.com.sofka.domain.ArProfesor.values.ExamenID;
+import co.com.sofka.domain.generic.ValueObject;
 
 public class Calificacion implements ValueObject<String> {
 

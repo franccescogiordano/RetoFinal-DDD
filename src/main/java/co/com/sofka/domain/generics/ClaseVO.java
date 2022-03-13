@@ -1,4 +1,6 @@
-package co.com.sofka.domain.generic;
+package co.com.sofka.domain.generics;
+
+import co.com.sofka.domain.generic.ValueObject;
 
 public class ClaseVO implements ValueObject<ClaseID> {
 

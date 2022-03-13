@@ -1,8 +1,7 @@
 package co.com.sofka.domain.ArProfesor.values;
 
-import co.com.sofka.domain.generic.AlumnoID;
-import co.com.sofka.domain.generic.ClaseID;
-import co.com.sofka.domain.generic.ClaseVO;
+import co.com.sofka.domain.generics.AlumnoID;
+import co.com.sofka.domain.generics.ClaseID;
 import co.com.sofka.domain.generic.ValueObject;
 import java.util.*;
 public class AlumnosEnLaClase implements ValueObject<Set<AlumnoID>> {

@@ -2,9 +2,7 @@ package co.com.sofka.domain.ArMateria.events;
 
 import co.com.sofka.domain.ArAlumno.values.Tipo;
 import co.com.sofka.domain.ArMateria.values.NombreMateria;
-import co.com.sofka.domain.generic.Direccion;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.domain.generic.NombreCompleto;
 
 public class MateriaCreada extends DomainEvent {
     private final NombreMateria nombreMateria;

@@ -1,6 +1,6 @@
 package co.com.sofka.domain.ArProfesor.values;
 
-import co.com.sofka.domain.generic.ProfesorID;
+import co.com.sofka.domain.generics.ProfesorID;
 import co.com.sofka.domain.generic.ValueObject;
 
 public class ProfesorACargo implements ValueObject<String> {

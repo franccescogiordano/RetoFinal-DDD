@@ -5,7 +5,7 @@ import co.com.sofka.domain.ArAlumno.values.FechaCobro;
 import co.com.sofka.domain.ArAlumno.values.Monto;
 import co.com.sofka.domain.ArAlumno.values.TipoBeca;
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.domain.generic.Nombre;
+import co.com.sofka.domain.generics.Nombre;
 
 public class Beca extends Entity<BecaId> {
     private final FechaCobro fechaCobro;

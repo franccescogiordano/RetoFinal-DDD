@@ -1,4 +1,6 @@
-package co.com.sofka.domain.generic;
+package co.com.sofka.domain.generics;
+
+import co.com.sofka.domain.generic.Identity;
 
 public class MateriaID extends Identity {
     private MateriaID(String id){

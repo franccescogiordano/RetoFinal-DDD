@@ -1,6 +1,5 @@
 package co.com.sofka.domain.ArAlumno.values;
 
-import co.com.sofka.domain.generic.ClaseID;
 import co.com.sofka.domain.generic.ValueObject;
 
 public class Monto implements ValueObject<Double> {

@@ -5,8 +5,8 @@ import co.com.sofka.domain.ArProfesor.values.MaterialID;
 import co.com.sofka.domain.ArProfesor.values.TipoMaterial;
 import co.com.sofka.domain.ArProfesor.values.Uso;
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.domain.generic.Nombre;
-import co.com.sofka.domain.generic.Orientacion;
+import co.com.sofka.domain.generics.Nombre;
+import co.com.sofka.domain.generics.Orientacion;
 
 public class Material extends Entity<MaterialID> {
     private final Nombre nombre;

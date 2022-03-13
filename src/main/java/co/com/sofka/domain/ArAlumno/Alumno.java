@@ -2,6 +2,7 @@ package co.com.sofka.domain.ArAlumno;
 
 import co.com.sofka.domain.ArAlumno.event.AlumnoCreado;
 import co.com.sofka.domain.generic.*;
+import co.com.sofka.domain.generics.*;
 
 import java.util.*;
 public class Alumno extends AggregateEvent<AlumnoID> {
@@ -9,7 +10,7 @@ public class Alumno extends AggregateEvent<AlumnoID> {
     protected Direccion direccion;
     protected Set<ProfesorID> profesores;
     protected ClaseVO clase;
-    protected  Orientacion orientacion;
+    protected Orientacion orientacion;
 
     public Alumno(AlumnoID alumnoId,NombreCompleto nombreCompleto,Direccion direccion) {
         super(alumnoId);

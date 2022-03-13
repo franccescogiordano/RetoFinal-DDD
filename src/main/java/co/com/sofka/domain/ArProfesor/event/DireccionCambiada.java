@@ -1,14 +1,13 @@
 package co.com.sofka.domain.ArProfesor.event;
 
-import co.com.sofka.domain.generic.Direccion;
+import co.com.sofka.domain.generics.Direccion;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.domain.generic.NombreCompleto;
 
 public class DireccionCambiada extends DomainEvent {
     private final Direccion direccion;
 
     public DireccionCambiada(Direccion direccion) {
-        super("profesor.DireccionCambiada");
+        super("profesor.direccioncambiada");
         this.direccion = direccion;
     }
 
