@@ -7,7 +7,7 @@ public class DireccionCambiada extends DomainEvent {
     private final Direccion direccion;
 
     public DireccionCambiada(Direccion direccion) {
-        super("profesor.direccioncambiada");
+        super("arprofesor.event.direccioncambiada");
         this.direccion = direccion;
     }
 

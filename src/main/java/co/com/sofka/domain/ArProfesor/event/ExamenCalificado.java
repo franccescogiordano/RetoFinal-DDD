@@ -6,7 +6,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 public class ExamenCalificado extends DomainEvent {
     private final Calificacion calificacion;
     public ExamenCalificado(Calificacion calificacion){
-        super("profesor.examencalificado");
+        super("arprofesor.event.examencalificado");
         this.calificacion=calificacion;
     }
 

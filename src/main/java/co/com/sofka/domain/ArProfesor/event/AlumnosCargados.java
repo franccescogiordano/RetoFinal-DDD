@@ -7,7 +7,7 @@ public class AlumnosCargados extends DomainEvent {
 
 
     public AlumnosCargados(Set<AlumnoID> alumno) {
-        super("profesor.alumnoscargados");
+        super("arprofesor.event.alumnoscargados");
         this.alumno=alumno;
         }
 

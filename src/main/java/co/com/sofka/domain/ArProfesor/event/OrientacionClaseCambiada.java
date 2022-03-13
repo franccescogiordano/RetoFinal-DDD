@@ -6,7 +6,7 @@ import co.com.sofka.domain.generics.Orientacion;
 public class OrientacionClaseCambiada extends DomainEvent {
     private final Orientacion orientacion;
     public OrientacionClaseCambiada(Orientacion orientacion){
-        super("profesor.orientacionclasecambiada");
+        super("arprofesor.event.orientacionclasecambiada");
         this.orientacion=orientacion;
     }
 

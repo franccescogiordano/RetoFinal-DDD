@@ -7,7 +7,7 @@ public class NombreCambiado extends DomainEvent {
    private final NombreCompleto nombreprofe;
 
     public NombreCambiado(NombreCompleto nombreprofe) {
-        super("profesor.nombrecambiado");
+        super("arprofesor.event.nombrecambiado");
         this.nombreprofe = nombreprofe;
     }
 

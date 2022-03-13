@@ -7,7 +7,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 public class AlumnosCargadosDeLaClase extends DomainEvent {
     private final AlumnosEnLaClase alumnosEnLaClase;
      public AlumnosCargadosDeLaClase(AlumnosEnLaClase alumnosEnLaClase){
-         super("profesores.alumnoscargadosdelaclase");
+         super("arprofesor.event.alumnoscargadosdelaclase");
          this.alumnosEnLaClase=alumnosEnLaClase;
      }
 

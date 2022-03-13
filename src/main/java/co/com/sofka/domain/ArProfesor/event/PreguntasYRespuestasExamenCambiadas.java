@@ -8,7 +8,7 @@ public class PreguntasYRespuestasExamenCambiadas extends DomainEvent {
     private final Preguntas preguntas;
     private final Respuestas respuestas;
     public PreguntasYRespuestasExamenCambiadas( Preguntas preguntas, Respuestas respuestas){
-        super("profesor.preguntasyrespuestasexamencambiadas");
+        super("arprofesor.event.preguntasyrespuestasexamencambiadas");
         this.preguntas=preguntas;
         this.respuestas=respuestas;
     }

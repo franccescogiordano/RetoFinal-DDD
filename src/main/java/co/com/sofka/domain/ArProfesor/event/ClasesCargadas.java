@@ -9,7 +9,7 @@ public class ClasesCargadas extends DomainEvent {
     private final Set<Clase> clases;
 
     public ClasesCargadas(Set<Clase> clases) {
-        super("profesor.clasescargadas");
+        super("arprofesor.event.clasescargadas");
         this.clases=clases;
     }
 

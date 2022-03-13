@@ -7,7 +7,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 public class RespuestaExamenCambiadas extends DomainEvent {
     private final Respuestas respuestas;
     public RespuestaExamenCambiadas(Respuestas respuestas) {
-        super("profesor.respuestaexamencambiadas");
+        super("arprofesor.event.respuestaexamencambiadas");
         this.respuestas = respuestas;
     }
 

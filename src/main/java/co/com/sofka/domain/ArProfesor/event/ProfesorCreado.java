@@ -10,7 +10,7 @@ public class ProfesorCreado extends DomainEvent {
 
 
     public ProfesorCreado(NombreCompleto nombreCompleto, Direccion direccion) {
-        super("profesor.profesorcreado");
+        super("arprofesor.event.profesorcreado");
         this.nombreCompleto = nombreCompleto;
         this.direccion = direccion;
     }

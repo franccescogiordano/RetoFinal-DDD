@@ -7,7 +7,7 @@ public class AlumnosContabilizadosDeLaClase extends DomainEvent {
     private final CantidadAlumnos cantidadAlumnos;
 
     public AlumnosContabilizadosDeLaClase(CantidadAlumnos cantidadAlumnos){
-        super("profesor.alumnoscontabilizadosdelaclase");
+        super("arprofesor.event.alumnoscontabilizadosdelaclase");
         this.cantidadAlumnos=cantidadAlumnos;
     }
 

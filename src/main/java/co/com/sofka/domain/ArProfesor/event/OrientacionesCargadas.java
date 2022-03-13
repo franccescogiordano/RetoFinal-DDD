@@ -9,7 +9,7 @@ public class OrientacionesCargadas extends DomainEvent {
     private final Set<Orientacion> orientacions;
 
     public OrientacionesCargadas(Set<Orientacion> orientacions) {
-        super("profesor.orientacionescargadas");
+        super("arprofesor.event.orientacionescargadas");
         this.orientacions=orientacions;
     }
 
