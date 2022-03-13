@@ -47,8 +47,8 @@ class CrearProfesorUseCaseTest {
         //assert
         var event = (ProfesorCreado)events.get(0);
         Assertions.assertEquals("arprofesor.event.profesorcreado", event.type);
-        Assertions.assertEquals(nombre,event.getNombreCompleto().value());
-        Assertions.assertEquals(dir,event.getDireccion().value());
+        Assertions.assertEquals(nombre.value(),event.getNombreCompleto().value());
+        Assertions.assertEquals(dir.value(),event.getDireccion().value());
         Assertions.assertEquals("xxxx", event.aggregateRootId());
     }
 }
