@@ -2,6 +2,8 @@ package co.com.sofka.domain.ArAlumno;
 
 import co.com.sofka.domain.ArAlumno.event.AlumnoCreado;
 import co.com.sofka.domain.ArAlumno.event.NombreCambiado;
+import co.com.sofka.domain.ArAlumno.event.ProfesoresCargados;
+import co.com.sofka.domain.ArProfesor.Profesor;
 import co.com.sofka.domain.ArProfesor.event.DireccionCambiada;
 import co.com.sofka.domain.generic.*;
 import co.com.sofka.domain.generics.*;
@@ -62,5 +64,8 @@ public class Alumno extends AggregateEvent<AlumnoID> {
         appendChange(new DireccionCambiada(dir)).apply();
     }
 
-
+    public void cargarProfesores(Set<ProfesorID> teachers){
+        appendChange(new ProfesoresCargados(teachers)).apply();
+    }
+    
 }
