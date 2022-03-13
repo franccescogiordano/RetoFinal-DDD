@@ -21,7 +21,7 @@ public class Materia extends AggregateEvent<MateriaID> {
     public Materia(MateriaID entityId, NombreMateria nombreMateria, Tipo tipo) {
         super(entityId);
         appendChange(new MateriaCreada(nombreMateria,tipo)).apply();
-        subscribe(new MateriaEventChange(this));
+
 
     }
 

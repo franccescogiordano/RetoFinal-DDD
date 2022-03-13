@@ -36,10 +36,11 @@ public class ProfesorEventChange extends EventChange {
             profesor.clases = event.getClases();
         });
 
-      /*  apply((AlumnosCargadosDeLaClase event) -> {
+        apply((AlumnosCargadosDeLaClase event) -> {
             //Agregar reglas de dominio
-            profesor.clases = event.getClases();
-        });*/
+           var clase= profesor.getClasePorId(event.getClaseid()).orElseThrow();
+           clase.actualizarAlumnosEnLaClase(event.getAlumnosEnLaClase());
+        });
 
     }
 }

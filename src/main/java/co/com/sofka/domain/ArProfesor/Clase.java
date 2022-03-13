@@ -12,7 +12,7 @@ public class Clase extends Entity<ClaseID> {
     private final CantidadAlumnos cantidadAlumnos;
     private final ProfesorACargo profesorACargo;
     private final NombreClase nombreClase;
-    private final AlumnosEnLaClase alumnosEnLaClase;
+    private AlumnosEnLaClase alumnosEnLaClase;
     private final Orientacion orientacion;
 
 
@@ -44,5 +44,9 @@ public class Clase extends Entity<ClaseID> {
 
     public Orientacion getOrientacion() {
         return orientacion;
+    }
+
+    public void actualizarAlumnosEnLaClase(AlumnosEnLaClase alumnosEnLaClase){
+       this.alumnosEnLaClase=alumnosEnLaClase;
     }
 }

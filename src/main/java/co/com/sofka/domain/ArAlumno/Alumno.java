@@ -1,6 +1,8 @@
 package co.com.sofka.domain.ArAlumno;
 
 import co.com.sofka.domain.ArAlumno.event.AlumnoCreado;
+import co.com.sofka.domain.ArAlumno.event.NombreCambiado;
+import co.com.sofka.domain.ArProfesor.event.DireccionCambiada;
 import co.com.sofka.domain.generic.*;
 import co.com.sofka.domain.generics.*;
 
@@ -10,12 +12,12 @@ public class Alumno extends AggregateEvent<AlumnoID> {
     protected Direccion direccion;
     protected Set<ProfesorID> profesores;
     protected ClaseVO clase;
+    protected Set<Curso> cursos;
     protected Orientacion orientacion;
 
     public Alumno(AlumnoID alumnoId,NombreCompleto nombreCompleto,Direccion direccion) {
         super(alumnoId);
         appendChange(new AlumnoCreado(nombreCompleto,direccion)).apply();
-        subscribe(new AlumnoEventChange(this));
 
     }
 
@@ -46,4 +48,19 @@ public class Alumno extends AggregateEvent<AlumnoID> {
     public Orientacion orientacion() {
         return orientacion;
     }
+
+    public Set<Curso> cursos() {
+        return cursos;
+    }
+
+
+    public void cambiarNombre(NombreCompleto nombre){
+        appendChange(new NombreCambiado(nombre)).apply();
+    }
+
+    public void ActualizarDireccion(Direccion dir){
+        appendChange(new DireccionCambiada(dir)).apply();
+    }
+
+
 }
