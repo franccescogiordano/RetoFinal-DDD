@@ -67,5 +67,5 @@ public class Alumno extends AggregateEvent<AlumnoID> {
     public void cargarProfesores(Set<ProfesorID> teachers){
         appendChange(new ProfesoresCargados(teachers)).apply();
     }
-    
+
 }

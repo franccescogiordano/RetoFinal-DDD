@@ -1,0 +1,7 @@
+
+@
+java:S1068
+"*Remove this unused "estado" private field.(ïÝÉú
+/
+java:S1700	"Rename field "fechaCobro"(°£éð
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’Œ—Ñûÿÿÿÿ

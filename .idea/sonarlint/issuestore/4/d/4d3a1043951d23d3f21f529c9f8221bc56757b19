@@ -1,0 +1,5 @@
+
+F
+java:S1068
+"+Remove this unused "claseid" private field.(À˜ððøÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ä•¾µûÿÿÿÿ

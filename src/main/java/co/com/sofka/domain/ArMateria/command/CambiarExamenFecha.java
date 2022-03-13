@@ -6,6 +6,7 @@ import co.com.sofka.domain.ArMateria.values.HoraInicio;
 import co.com.sofka.domain.generic.Command;
 
 public class CambiarExamenFecha extends Command {
+
     private final HoraInicio horaInicio;
     private final HoraFin horaFin;
     private final Dia dia;
