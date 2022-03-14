@@ -25,8 +25,8 @@ public class Profesor extends AggregateEvent<ProfesorID> {
         super(profesorID);
         subscribe(new ProfesorEventChange(this));
     }
-    public static Profesor from(ProfesorID profesorId,NombreCompleto nombreCompleto,Direccion direccion, List<DomainEvent> eventList){
-        Profesor profesor = new Profesor(profesorId,nombreCompleto,direccion);
+    public static Profesor from(ProfesorID profesorId, List<DomainEvent> eventList){
+        Profesor profesor = new Profesor(profesorId);
         eventList.forEach(profesor::applyEvent);
 
         return profesor;

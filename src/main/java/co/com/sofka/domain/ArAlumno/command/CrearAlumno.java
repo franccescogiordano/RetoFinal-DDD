@@ -1,20 +1,21 @@
-package co.com.sofka.domain.ArAlumno.event;
+package co.com.sofka.domain.ArAlumno.command;
 
-import co.com.sofka.domain.generic.*;
+import co.com.sofka.domain.generic.Command;
+import co.com.sofka.domain.generics.AlumnoID;
 import co.com.sofka.domain.generics.Direccion;
 import co.com.sofka.domain.generics.NombreCompleto;
 
-public class AlumnoCreado extends DomainEvent {
+public class CrearAlumno extends Command {
     private final NombreCompleto nombreCompleto;
     private final Direccion direccion;
+    private final AlumnoID alumnoID;
 
-
-    public AlumnoCreado(NombreCompleto nombreCompleto,Direccion direccion) {
-        super("aralumno.event.alumnocreado");
+    public CrearAlumno(NombreCompleto nombreCompleto, Direccion direccion, AlumnoID alumnoID) {
         this.nombreCompleto=nombreCompleto;
         this.direccion=direccion;
 
 
+        this.alumnoID = alumnoID;
     }
 
     public NombreCompleto getNombreCompleto() {
@@ -26,4 +27,7 @@ public class AlumnoCreado extends DomainEvent {
     }
 
 
+    public AlumnoID getAlumnoID() {
+        return alumnoID;
+    }
 }

@@ -6,7 +6,7 @@ import co.com.sofka.business.support.ResponseEvents;
 import co.com.sofka.domain.ArProfesor.Profesor;
 import co.com.sofka.domain.ArProfesor.command.CrearProfesor;
 
-public class CrearProfesorUseCase extends UseCase<RequestCommand<CrearProfesor>, ResponseEvents> {
+public  class CrearProfesorUseCase extends UseCase<RequestCommand<CrearProfesor>, ResponseEvents> {
 
     @Override
     public void executeUseCase(RequestCommand<CrearProfesor> input) {
